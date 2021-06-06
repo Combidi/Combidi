@@ -8,5 +8,14 @@ func userReducer(
     state: inout ActivityState,
     action: InternalUserAction
 ) {
-    
+    switch action {
+    case .loginStarted:
+        state = .performing
+    case .loginFinished(_):
+        state = .idle
+    case .didEncounterError(let error):
+        state = .message(error.localizedDescription)
+    default:
+        break
+    }
 }
