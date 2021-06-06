@@ -4,11 +4,11 @@
 
 import Combine
 
-public class Store<State, Action>: ObservableObject {
+class Store<State, Action>: ObservableObject {
             
-    private var derivedCancellables: Set<AnyCancellable> = []
+    var derivedCancellables: Set<AnyCancellable> = []
     
-    @Published public internal(set) var state: State
+    @Published internal(set) var state: State
 
     let _dispatch: (Action) -> Void
     
@@ -17,11 +17,11 @@ public class Store<State, Action>: ObservableObject {
         _dispatch = dispatch
     }
         
-    public func dispatch(action: Action) {
+    func dispatch(action: Action) {
         _dispatch(action)
     }
     
-    public func derived<DerivedState: Equatable, ExtractedAction>(
+    func derived<DerivedState: Equatable, ExtractedAction>(
         deriveState: @escaping (State) -> DerivedState,
         embedAction: @escaping (ExtractedAction) -> Action
     ) -> Store<DerivedState, ExtractedAction> {
