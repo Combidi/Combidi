@@ -1,7 +1,4 @@
 //
-//  CombidiApp.swift
-//  Shared
-//
 //  Created by Peter Combee on 04/06/2021.
 //
 
@@ -11,7 +8,9 @@ import SwiftUI
 struct CombidiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }
+
+private let store = makeStore()
