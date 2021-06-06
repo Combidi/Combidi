@@ -27,7 +27,7 @@ private func makeAppStore() -> AppStore {
 private func appReducer(state: inout AppState, action: InternalAction) {
     switch action {
     case .user(let userAction):
-        userReducer(state: &state.loginState, action: userAction)
+        userReducer(state: &state, action: userAction)
     }
 }
 

@@ -5,16 +5,17 @@
 import Foundation
 
 func userReducer(
-    state: inout ActivityState,
+    state: inout AppState,
     action: InternalUserAction
 ) {
     switch action {
     case .loginStarted:
-        state = .performing
-    case .loginFinished(_):
-        state = .idle
+        state.loginState = .performing
+    case .loginFinished(let result):
+        state.loginState = .idle
+        state.session = result == .success ? .init() : nil
     case .didEncounterError(let error):
-        state = .message(error.localizedDescription)
+        state.loginState = .message(error.localizedDescription)
     default:
         break
     }

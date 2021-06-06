@@ -39,6 +39,10 @@
 		A656CB4D266BCA2A00779260 /* InternalAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB4B266BCA2A00779260 /* InternalAction.swift */; };
 		A656CB53266D088F00779260 /* LoginServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB52266D088F00779260 /* LoginServiceStub.swift */; };
 		A656CB54266D088F00779260 /* LoginServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB52266D088F00779260 /* LoginServiceStub.swift */; };
+		A656CB5C266D0D4000779260 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5B266D0D4000779260 /* RootView.swift */; };
+		A656CB5D266D0D4000779260 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5B266D0D4000779260 /* RootView.swift */; };
+		A656CB5F266D0D9100779260 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5E266D0D9100779260 /* AppView.swift */; };
+		A656CB60266D0D9100779260 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5E266D0D9100779260 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,8 @@
 		A6503DCF266A57B0009CF173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A656CB4B266BCA2A00779260 /* InternalAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalAction.swift; sourceTree = "<group>"; };
 		A656CB52266D088F00779260 /* LoginServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceStub.swift; sourceTree = "<group>"; };
+		A656CB5B266D0D4000779260 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A656CB5E266D0D9100779260 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,9 +159,9 @@
 		A6045EEE266A606600BF2EE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A6045EEF266A607600BF2EE2 /* LoginView.swift */,
-				A6045EF2266A629000BF2EE2 /* LoginRenderView.swift */,
-				A6045EF9266A640E00BF2EE2 /* LoginStore.swift */,
+				A656CB61266D13C300779260 /* Login */,
+				A656CB5B266D0D4000779260 /* RootView.swift */,
+				A656CB5E266D0D9100779260 /* AppView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -245,6 +251,16 @@
 				A656CB52266D088F00779260 /* LoginServiceStub.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A656CB61266D13C300779260 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A6045EEF266A607600BF2EE2 /* LoginView.swift */,
+				A6045EF2266A629000BF2EE2 /* LoginRenderView.swift */,
+				A6045EF9266A640E00BF2EE2 /* LoginStore.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +424,7 @@
 				A6045EE7266A594600BF2EE2 /* makeStore.swift in Sources */,
 				A6045EFD266A658C00BF2EE2 /* UserSessionMiddleware.swift in Sources */,
 				A6045EF0266A607600BF2EE2 /* LoginView.swift in Sources */,
+				A656CB5F266D0D9100779260 /* AppView.swift in Sources */,
 				A6045EE1266A58B400BF2EE2 /* Store.swift in Sources */,
 				A6503DD2266A57B0009CF173 /* ContentView.swift in Sources */,
 				A6045EF7266A63C000BF2EE2 /* AppAction.swift in Sources */,
@@ -418,6 +435,7 @@
 				A6045EFA266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE4266A590000BF2EE2 /* AppState.swift in Sources */,
+				A656CB5C266D0D4000779260 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +447,7 @@
 				A6045EE8266A594600BF2EE2 /* makeStore.swift in Sources */,
 				A6045EFE266A658C00BF2EE2 /* UserSessionMiddleware.swift in Sources */,
 				A6045EF1266A607600BF2EE2 /* LoginView.swift in Sources */,
+				A656CB60266D0D9100779260 /* AppView.swift in Sources */,
 				A6045EE2266A58B400BF2EE2 /* Store.swift in Sources */,
 				A6503DD3266A57B0009CF173 /* ContentView.swift in Sources */,
 				A6045EF8266A63C000BF2EE2 /* AppAction.swift in Sources */,
@@ -439,6 +458,7 @@
 				A6045EFB266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A6503DD1266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE5266A590000BF2EE2 /* AppState.swift in Sources */,
+				A656CB5D266D0D4000779260 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

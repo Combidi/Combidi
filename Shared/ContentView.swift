@@ -9,8 +9,19 @@ struct ContentView: View {
     let store: MainStore
     
     var body: some View {
-        LoginView()
-            .environmentObject(store.loginStore())
+        RootView(
+            loggedInView: appView,
+            loggedOutView: loginView
+        )
+        .environmentObject(store.isLoggedInObservable())
+    }
+    
+    private var appView: some View {
+        AppView().environmentObject(store.isLoggedInObservable())
+    }
+    
+    private var loginView: some View {
+        LoginView().environmentObject(store.loginStore())
     }
 }
 
