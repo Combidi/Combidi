@@ -10,7 +10,7 @@ private let expected = Credentials(username: "peter", password: "combee")
 struct LoginServiceStub: LoginService {
     func login(credentials: Credentials) -> AnyPublisher<AuthenticationResult, ServiceError> {
         return Just<AuthenticationResult>(credentials == expected ? .success : .denied)
-            .delay(for: 3.0, scheduler: RunLoop.main)
+            .delay(for: 1.0, scheduler: RunLoop.main)
             .setFailureType(to: ServiceError.self)
             .eraseToAnyPublisher()
     }
