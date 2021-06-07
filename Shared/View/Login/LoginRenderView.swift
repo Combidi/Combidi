@@ -4,26 +4,65 @@
 
 import SwiftUI
 
+/*
+ See URL for design
+ https://search.muz.li/ZmNjY2EzN2Zl
+ */
+
 struct LoginRenderView: View {
     
-    let attemptLogin: () -> Void
     @Binding var username: String
     @Binding var password: String
     
-    var body: some View {
-        VStack {
-            TextField("Username", text: $username)
-                .disableAutocorrection(true)
-                .autocapitalization(.none)
-            SecureField("Password", text: $password)
-                .disableAutocorrection(true)
-                .autocapitalization(.none)
+    let attemptLogin: () -> Void
 
-            
-            Button(action: attemptLogin) {
-                Text("Login")
+    var body: some View {
+        ZStack {
+            Color.yellow
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                image
+                Text("Welcome!")
+                TextField("Username", text: $username)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                SecureField("Password", text: $password)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                loginButton
             }
         }
+        .background(background)
+    }
+    
+    private var background: some View {
+        VStack {
+            RoundedRectangle(cornerRadius: 25).fill(Color.blue)
+            Color.blue
+        }
+    }
+    
+    private var image: some View {
+        Image("Peter")
+            .size(75)
+            .mask(Circle())
+            .padding(3)
+            .background(Color.red.mask(Circle()))
+    }
+    
+    private var loginButton: some View {
+        Button(action: attemptLogin) {
+            Text("Login")
+        }
+        .background(Color.orange)
+    }
+}
+
+extension Image {
+    func size(_ size: CGFloat) -> some View {
+        self
+            .resizable()
+            .frame(width: size, height: size)
     }
 }
 
@@ -34,13 +73,17 @@ struct LoginRenderExampleView: View {
     @State private var password: String = "Combee"
     
     var body: some View {
-        LoginRenderView(attemptLogin: {}, username: $username, password: $password)
+        LoginRenderView(
+            username: $username,
+            password: $password,
+            attemptLogin: {}
+        )
     }
 }
-#endif
 
 struct LoginRenderView_Previews: PreviewProvider {
     static var previews: some View {
         LoginRenderExampleView()
     }
 }
+#endif

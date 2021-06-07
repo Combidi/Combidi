@@ -15,9 +15,9 @@ struct LoginView: View {
     
     var body: some View {
         LoginRenderView(
-            attemptLogin: attemptLogin,
             username: $username,
-            password: $password
+            password: $password,
+            attemptLogin: attemptLogin
         )
     }
     
