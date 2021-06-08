@@ -3,19 +3,9 @@
 //
 
 import SwiftUI
-
 import Combine
 
-
 typealias IsLoggedInObservable = ObservableState<Bool>
-
-extension MainStore {
-    func isLoggedInObservable() -> IsLoggedInObservable {
-        self.derivedState(deriveState: { state in
-            state.session != nil
-        })
-    }
-}
 
 struct RootView<LoggedInView: View, LoggedOutView: View>: View {
             

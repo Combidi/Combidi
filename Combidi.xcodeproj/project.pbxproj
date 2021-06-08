@@ -43,6 +43,8 @@
 		A656CB5D266D0D4000779260 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5B266D0D4000779260 /* RootView.swift */; };
 		A656CB5F266D0D9100779260 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5E266D0D9100779260 /* AppView.swift */; };
 		A656CB60266D0D9100779260 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5E266D0D9100779260 /* AppView.swift */; };
+		A67350BF266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */; };
+		A67350C0266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,7 @@
 		A656CB52266D088F00779260 /* LoginServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceStub.swift; sourceTree = "<group>"; };
 		A656CB5B266D0D4000779260 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		A656CB5E266D0D9100779260 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLoggedInObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +162,9 @@
 		A6045EEE266A606600BF2EE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6503DA8266A57AD009CF173 /* ContentView.swift */,
+				A67350BD266FFE77006D0CB0 /* Root */,
 				A656CB61266D13C300779260 /* Login */,
-				A656CB5B266D0D4000779260 /* RootView.swift */,
 				A656CB5E266D0D9100779260 /* AppView.swift */,
 			);
 			path = View;
@@ -193,7 +197,6 @@
 				A6045EEE266A606600BF2EE2 /* View */,
 				A6045EDF266A588400BF2EE2 /* Model */,
 				A6503DA7266A57AD009CF173 /* CombidiApp.swift */,
-				A6503DA8266A57AD009CF173 /* ContentView.swift */,
 				A6503DA9266A57B0009CF173 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -261,6 +264,15 @@
 				A6045EF9266A640E00BF2EE2 /* LoginStore.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		A67350BD266FFE77006D0CB0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A656CB5B266D0D4000779260 /* RootView.swift */,
+				A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +444,7 @@
 				A6045EF3266A629000BF2EE2 /* LoginRenderView.swift in Sources */,
 				A6045F03266A66A100BF2EE2 /* UserReducer.swift in Sources */,
 				A6045EEA266A59C000BF2EE2 /* AppStore.swift in Sources */,
+				A67350BF266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */,
 				A6045EFA266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE4266A590000BF2EE2 /* AppState.swift in Sources */,
@@ -455,6 +468,7 @@
 				A6045EF4266A629000BF2EE2 /* LoginRenderView.swift in Sources */,
 				A6045F04266A66A100BF2EE2 /* UserReducer.swift in Sources */,
 				A6045EEB266A59C000BF2EE2 /* AppStore.swift in Sources */,
+				A67350C0266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */,
 				A6045EFB266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A6503DD1266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE5266A590000BF2EE2 /* AppState.swift in Sources */,
