@@ -27,6 +27,12 @@
 		A6045EFE266A658C00BF2EE2 /* UserSessionMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6045EFC266A658C00BF2EE2 /* UserSessionMiddleware.swift */; };
 		A6045F03266A66A100BF2EE2 /* UserReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6045F02266A66A100BF2EE2 /* UserReducer.swift */; };
 		A6045F04266A66A100BF2EE2 /* UserReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6045F02266A66A100BF2EE2 /* UserReducer.swift */; };
+		A616D5B22670FC02005AF719 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B12670FC02005AF719 /* LoginService.swift */; };
+		A616D5B32670FC02005AF719 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B12670FC02005AF719 /* LoginService.swift */; };
+		A616D5B52670FC27005AF719 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B42670FC27005AF719 /* ServiceError.swift */; };
+		A616D5B62670FC27005AF719 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B42670FC27005AF719 /* ServiceError.swift */; };
+		A616D5B82670FC84005AF719 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B72670FC84005AF719 /* AppError.swift */; };
+		A616D5B92670FC84005AF719 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B72670FC84005AF719 /* AppError.swift */; };
 		A6503DC3266A57B0009CF173 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6503DC2266A57B0009CF173 /* Tests_iOS.swift */; };
 		A6503DCE266A57B0009CF173 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6503DCD266A57B0009CF173 /* Tests_macOS.swift */; };
 		A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6503DA7266A57AD009CF173 /* CombidiApp.swift */; };
@@ -45,6 +51,8 @@
 		A656CB60266D0D9100779260 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A656CB5E266D0D9100779260 /* AppView.swift */; };
 		A67350BF266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */; };
 		A67350C0266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */; };
+		A67350C2267005AF006D0CB0 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350C1267005AF006D0CB0 /* Field.swift */; };
+		A67350C3267005AF006D0CB0 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350C1267005AF006D0CB0 /* Field.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +83,9 @@
 		A6045EF9266A640E00BF2EE2 /* LoginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStore.swift; sourceTree = "<group>"; };
 		A6045EFC266A658C00BF2EE2 /* UserSessionMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionMiddleware.swift; sourceTree = "<group>"; };
 		A6045F02266A66A100BF2EE2 /* UserReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReducer.swift; sourceTree = "<group>"; };
+		A616D5B12670FC02005AF719 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		A616D5B42670FC27005AF719 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		A616D5B72670FC84005AF719 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		A6503DA7266A57AD009CF173 /* CombidiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombidiApp.swift; sourceTree = "<group>"; };
 		A6503DA8266A57AD009CF173 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6503DA9266A57B0009CF173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +105,7 @@
 		A656CB5B266D0D4000779260 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		A656CB5E266D0D9100779260 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLoggedInObservable.swift; sourceTree = "<group>"; };
+		A67350C1267005AF006D0CB0 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +151,7 @@
 				A6045EE3266A590000BF2EE2 /* AppState.swift */,
 				A6045EE6266A594600BF2EE2 /* makeStore.swift */,
 				A6045EE9266A59C000BF2EE2 /* AppStore.swift */,
+				A616D5B72670FC84005AF719 /* AppError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 				A67350BD266FFE77006D0CB0 /* Root */,
 				A656CB61266D13C300779260 /* Login */,
 				A656CB5E266D0D9100779260 /* AppView.swift */,
+				A67350C1267005AF006D0CB0 /* Field.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +191,14 @@
 				A656CB4B266BCA2A00779260 /* InternalAction.swift */,
 			);
 			path = Actions;
+			sourceTree = "<group>";
+		};
+		A616D5AF2670FBDC005AF719 /* Service Stub */ = {
+			isa = PBXGroup;
+			children = (
+				A656CB52266D088F00779260 /* LoginServiceStub.swift */,
+			);
+			path = "Service Stub";
 			sourceTree = "<group>";
 		};
 		A6503DA1266A57AD009CF173 = {
@@ -251,7 +273,9 @@
 		A656CB51266D088200779260 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A656CB52266D088F00779260 /* LoginServiceStub.swift */,
+				A616D5B12670FC02005AF719 /* LoginService.swift */,
+				A616D5B42670FC27005AF719 /* ServiceError.swift */,
+				A616D5AF2670FBDC005AF719 /* Service Stub */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -432,6 +456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A616D5B52670FC27005AF719 /* ServiceError.swift in Sources */,
+				A616D5B22670FC02005AF719 /* LoginService.swift in Sources */,
 				A656CB4C266BCA2A00779260 /* InternalAction.swift in Sources */,
 				A6045EE7266A594600BF2EE2 /* makeStore.swift in Sources */,
 				A6045EFD266A658C00BF2EE2 /* UserSessionMiddleware.swift in Sources */,
@@ -446,9 +472,11 @@
 				A6045EEA266A59C000BF2EE2 /* AppStore.swift in Sources */,
 				A67350BF266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */,
 				A6045EFA266A640E00BF2EE2 /* LoginStore.swift in Sources */,
+				A67350C2267005AF006D0CB0 /* Field.swift in Sources */,
 				A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE4266A590000BF2EE2 /* AppState.swift in Sources */,
 				A656CB5C266D0D4000779260 /* RootView.swift in Sources */,
+				A616D5B82670FC84005AF719 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A616D5B62670FC27005AF719 /* ServiceError.swift in Sources */,
+				A616D5B32670FC02005AF719 /* LoginService.swift in Sources */,
 				A656CB4D266BCA2A00779260 /* InternalAction.swift in Sources */,
 				A6045EE8266A594600BF2EE2 /* makeStore.swift in Sources */,
 				A6045EFE266A658C00BF2EE2 /* UserSessionMiddleware.swift in Sources */,
@@ -470,9 +500,11 @@
 				A6045EEB266A59C000BF2EE2 /* AppStore.swift in Sources */,
 				A67350C0266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */,
 				A6045EFB266A640E00BF2EE2 /* LoginStore.swift in Sources */,
+				A67350C3267005AF006D0CB0 /* Field.swift in Sources */,
 				A6503DD1266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE5266A590000BF2EE2 /* AppState.swift in Sources */,
 				A656CB5D266D0D4000779260 /* RootView.swift in Sources */,
+				A616D5B92670FC84005AF719 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

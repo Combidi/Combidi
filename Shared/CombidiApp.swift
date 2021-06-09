@@ -4,6 +4,8 @@
 
 import SwiftUI
 
+private let store = makeStore()
+
 @main
 struct CombidiApp: App {
     var body: some Scene {
@@ -13,4 +15,3 @@ struct CombidiApp: App {
     }
 }
 
-private let store = makeStore()
