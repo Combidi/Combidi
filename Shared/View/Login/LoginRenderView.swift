@@ -58,14 +58,6 @@ struct LoginRenderView: View {
     }
 }
 
-extension Image {
-    func size(_ size: CGFloat) -> some View {
-        self
-            .resizable()
-            .frame(width: size, height: size)
-    }
-}
-
 #if DEBUG
 struct LoginRenderExampleView: View {
     

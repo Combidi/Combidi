@@ -33,6 +33,10 @@
 		A616D5B62670FC27005AF719 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B42670FC27005AF719 /* ServiceError.swift */; };
 		A616D5B82670FC84005AF719 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B72670FC84005AF719 /* AppError.swift */; };
 		A616D5B92670FC84005AF719 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5B72670FC84005AF719 /* AppError.swift */; };
+		A616D5BB2670FD93005AF719 /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5BA2670FD93005AF719 /* Image+.swift */; };
+		A616D5BC2670FD93005AF719 /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5BA2670FD93005AF719 /* Image+.swift */; };
+		A616D5BE2670FE3A005AF719 /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5BD2670FE3A005AF719 /* AnyPublisher+.swift */; };
+		A616D5BF2670FE3A005AF719 /* AnyPublisher+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A616D5BD2670FE3A005AF719 /* AnyPublisher+.swift */; };
 		A6503DC3266A57B0009CF173 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6503DC2266A57B0009CF173 /* Tests_iOS.swift */; };
 		A6503DCE266A57B0009CF173 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6503DCD266A57B0009CF173 /* Tests_macOS.swift */; };
 		A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6503DA7266A57AD009CF173 /* CombidiApp.swift */; };
@@ -86,6 +90,8 @@
 		A616D5B12670FC02005AF719 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		A616D5B42670FC27005AF719 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		A616D5B72670FC84005AF719 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A616D5BA2670FD93005AF719 /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
+		A616D5BD2670FE3A005AF719 /* AnyPublisher+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyPublisher+.swift"; sourceTree = "<group>"; };
 		A6503DA7266A57AD009CF173 /* CombidiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombidiApp.swift; sourceTree = "<group>"; };
 		A6503DA8266A57AD009CF173 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A6503DA9266A57B0009CF173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +149,7 @@
 		A6045EDF266A588400BF2EE2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A616D5C12670FE7B005AF719 /* Combine+ */,
 				A656CB51266D088200779260 /* Services */,
 				A6045EF5266A63AD00BF2EE2 /* Actions */,
 				A6045EED266A5EA900BF2EE2 /* Middlewares */,
@@ -175,6 +182,7 @@
 		A6045EEE266A606600BF2EE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A616D5C02670FE5D005AF719 /* SwiftUI+ */,
 				A6503DA8266A57AD009CF173 /* ContentView.swift */,
 				A67350BD266FFE77006D0CB0 /* Root */,
 				A656CB61266D13C300779260 /* Login */,
@@ -199,6 +207,22 @@
 				A656CB52266D088F00779260 /* LoginServiceStub.swift */,
 			);
 			path = "Service Stub";
+			sourceTree = "<group>";
+		};
+		A616D5C02670FE5D005AF719 /* SwiftUI+ */ = {
+			isa = PBXGroup;
+			children = (
+				A616D5BA2670FD93005AF719 /* Image+.swift */,
+			);
+			path = "SwiftUI+";
+			sourceTree = "<group>";
+		};
+		A616D5C12670FE7B005AF719 /* Combine+ */ = {
+			isa = PBXGroup;
+			children = (
+				A616D5BD2670FE3A005AF719 /* AnyPublisher+.swift */,
+			);
+			path = "Combine+";
 			sourceTree = "<group>";
 		};
 		A6503DA1266A57AD009CF173 = {
@@ -465,6 +489,7 @@
 				A656CB5F266D0D9100779260 /* AppView.swift in Sources */,
 				A6045EE1266A58B400BF2EE2 /* Store.swift in Sources */,
 				A6503DD2266A57B0009CF173 /* ContentView.swift in Sources */,
+				A616D5BE2670FE3A005AF719 /* AnyPublisher+.swift in Sources */,
 				A6045EF7266A63C000BF2EE2 /* AppAction.swift in Sources */,
 				A656CB53266D088F00779260 /* LoginServiceStub.swift in Sources */,
 				A6045EF3266A629000BF2EE2 /* LoginRenderView.swift in Sources */,
@@ -477,6 +502,7 @@
 				A6045EE4266A590000BF2EE2 /* AppState.swift in Sources */,
 				A656CB5C266D0D4000779260 /* RootView.swift in Sources */,
 				A616D5B82670FC84005AF719 /* AppError.swift in Sources */,
+				A616D5BB2670FD93005AF719 /* Image+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +519,7 @@
 				A656CB60266D0D9100779260 /* AppView.swift in Sources */,
 				A6045EE2266A58B400BF2EE2 /* Store.swift in Sources */,
 				A6503DD3266A57B0009CF173 /* ContentView.swift in Sources */,
+				A616D5BF2670FE3A005AF719 /* AnyPublisher+.swift in Sources */,
 				A6045EF8266A63C000BF2EE2 /* AppAction.swift in Sources */,
 				A656CB54266D088F00779260 /* LoginServiceStub.swift in Sources */,
 				A6045EF4266A629000BF2EE2 /* LoginRenderView.swift in Sources */,
@@ -505,6 +532,7 @@
 				A6045EE5266A590000BF2EE2 /* AppState.swift in Sources */,
 				A656CB5D266D0D4000779260 /* RootView.swift in Sources */,
 				A616D5B92670FC84005AF719 /* AppError.swift in Sources */,
+				A616D5BC2670FD93005AF719 /* Image+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

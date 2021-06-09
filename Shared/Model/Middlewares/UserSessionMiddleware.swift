@@ -26,14 +26,3 @@ func userSessionMiddleware(
 extension ServiceError {
     var appError: AppError { .init() }
 }
-
-
-extension AnyPublisher where Output == InternalAction, Failure == Never {
-    func flatMapAction(
-        _ transform: @escaping (Output) -> Self
-    ) -> AnyPublisher<Output, Never> {
-        self.flatMap { (action: Output) -> Self in
-            transform(action)
-        }.eraseToAnyPublisher()
-    }
-}
