@@ -9,14 +9,14 @@ struct Field: View {
     let title: String
     @Binding var text: String
     
-    
     var body: some View {
         VStack(alignment: .leading) {
             Text(title)
+                .foregroundColor(ColorManager.secondaryText)
             TextField("", text: $text)
-                .foregroundColor(.blue)
-            Color.blue
-                .frame(height: 1)
+                .foregroundColor(ColorManager.highlightedText)
+            ColorManager.primaryText
+                .frame(height: 2)
         }
     }
 }
@@ -24,7 +24,7 @@ struct Field: View {
 #if DEBUG
 struct FieldExampleView: View {
     
-    @State private var text = ""
+    @State private var text = "peter@combee.nl"
     
     var body: some View {
         Field(title: "Username", text: $text)
@@ -34,6 +34,7 @@ struct FieldExampleView: View {
 struct Field_Previews: PreviewProvider {
     static var previews: some View {
         FieldExampleView()
+            .previewLayout(.sizeThatFits)
     }
 }
 #endif

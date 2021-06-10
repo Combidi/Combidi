@@ -57,6 +57,12 @@
 		A67350C0266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */; };
 		A67350C2267005AF006D0CB0 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350C1267005AF006D0CB0 /* Field.swift */; };
 		A67350C3267005AF006D0CB0 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67350C1267005AF006D0CB0 /* Field.swift */; };
+		A6E94C702672406200A1A2C2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E94C6F2672406200A1A2C2 /* Colors.xcassets */; };
+		A6E94C712672406200A1A2C2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E94C6F2672406200A1A2C2 /* Colors.xcassets */; };
+		A6E94C73267240B200A1A2C2 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C72267240B200A1A2C2 /* ColorManager.swift */; };
+		A6E94C74267240B200A1A2C2 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C72267240B200A1A2C2 /* ColorManager.swift */; };
+		A6E94C76267242CB00A1A2C2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C75267242CB00A1A2C2 /* View+.swift */; };
+		A6E94C77267242CB00A1A2C2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C75267242CB00A1A2C2 /* View+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +118,9 @@
 		A656CB5E266D0D9100779260 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLoggedInObservable.swift; sourceTree = "<group>"; };
 		A67350C1267005AF006D0CB0 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		A6E94C6F2672406200A1A2C2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A6E94C72267240B200A1A2C2 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		A6E94C75267242CB00A1A2C2 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +191,7 @@
 		A6045EEE266A606600BF2EE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6E94C7826724DE700A1A2C2 /* Color Manager */,
 				A616D5C02670FE5D005AF719 /* SwiftUI+ */,
 				A6503DA8266A57AD009CF173 /* ContentView.swift */,
 				A67350BD266FFE77006D0CB0 /* Root */,
@@ -213,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				A616D5BA2670FD93005AF719 /* Image+.swift */,
+				A6E94C75267242CB00A1A2C2 /* View+.swift */,
 			);
 			path = "SwiftUI+";
 			sourceTree = "<group>";
@@ -321,6 +332,15 @@
 				A67350BE266FFE88006D0CB0 /* IsLoggedInObservable.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		A6E94C7826724DE700A1A2C2 /* Color Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A6E94C6F2672406200A1A2C2 /* Colors.xcassets */,
+				A6E94C72267240B200A1A2C2 /* ColorManager.swift */,
+			);
+			path = "Color Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6503DD4266A57B0009CF173 /* Assets.xcassets in Resources */,
+				A6E94C702672406200A1A2C2 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6503DD5266A57B0009CF173 /* Assets.xcassets in Resources */,
+				A6E94C712672406200A1A2C2 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +505,7 @@
 				A616D5B52670FC27005AF719 /* ServiceError.swift in Sources */,
 				A616D5B22670FC02005AF719 /* LoginService.swift in Sources */,
 				A656CB4C266BCA2A00779260 /* InternalAction.swift in Sources */,
+				A6E94C76267242CB00A1A2C2 /* View+.swift in Sources */,
 				A6045EE7266A594600BF2EE2 /* makeStore.swift in Sources */,
 				A6045EFD266A658C00BF2EE2 /* UserSessionMiddleware.swift in Sources */,
 				A6045EF0266A607600BF2EE2 /* LoginView.swift in Sources */,
@@ -495,6 +518,7 @@
 				A6045EF3266A629000BF2EE2 /* LoginRenderView.swift in Sources */,
 				A6045F03266A66A100BF2EE2 /* UserReducer.swift in Sources */,
 				A6045EEA266A59C000BF2EE2 /* AppStore.swift in Sources */,
+				A6E94C73267240B200A1A2C2 /* ColorManager.swift in Sources */,
 				A67350BF266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */,
 				A6045EFA266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A67350C2267005AF006D0CB0 /* Field.swift in Sources */,
@@ -513,6 +537,7 @@
 				A616D5B62670FC27005AF719 /* ServiceError.swift in Sources */,
 				A616D5B32670FC02005AF719 /* LoginService.swift in Sources */,
 				A656CB4D266BCA2A00779260 /* InternalAction.swift in Sources */,
+				A6E94C77267242CB00A1A2C2 /* View+.swift in Sources */,
 				A6045EE8266A594600BF2EE2 /* makeStore.swift in Sources */,
 				A6045EFE266A658C00BF2EE2 /* UserSessionMiddleware.swift in Sources */,
 				A6045EF1266A607600BF2EE2 /* LoginView.swift in Sources */,
@@ -525,6 +550,7 @@
 				A6045EF4266A629000BF2EE2 /* LoginRenderView.swift in Sources */,
 				A6045F04266A66A100BF2EE2 /* UserReducer.swift in Sources */,
 				A6045EEB266A59C000BF2EE2 /* AppStore.swift in Sources */,
+				A6E94C74267240B200A1A2C2 /* ColorManager.swift in Sources */,
 				A67350C0266FFE88006D0CB0 /* IsLoggedInObservable.swift in Sources */,
 				A6045EFB266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A67350C3267005AF006D0CB0 /* Field.swift in Sources */,
