@@ -5,7 +5,7 @@
 import SwiftUI
 
 struct ColorManager {
-    static var background: Color { .init("backgroundColor") }
+    static var background: Color { .init("background") }
     static var primaryText: Color { .init("primaryText") }
     static var secondaryText: Color { .init("secondaryText") }
     static var highlightedText: Color { .init("highlightedText") }
