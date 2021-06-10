@@ -63,6 +63,8 @@
 		A6E94C74267240B200A1A2C2 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C72267240B200A1A2C2 /* ColorManager.swift */; };
 		A6E94C76267242CB00A1A2C2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C75267242CB00A1A2C2 /* View+.swift */; };
 		A6E94C77267242CB00A1A2C2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C75267242CB00A1A2C2 /* View+.swift */; };
+		A6E94C7A26724FF500A1A2C2 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */; };
+		A6E94C7B26724FF500A1A2C2 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,7 @@
 		A6E94C6F2672406200A1A2C2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A6E94C72267240B200A1A2C2 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		A6E94C75267242CB00A1A2C2 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,13 +194,14 @@
 		A6045EEE266A606600BF2EE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6503DA8266A57AD009CF173 /* ContentView.swift */,
 				A6E94C7826724DE700A1A2C2 /* Color Manager */,
 				A616D5C02670FE5D005AF719 /* SwiftUI+ */,
-				A6503DA8266A57AD009CF173 /* ContentView.swift */,
 				A67350BD266FFE77006D0CB0 /* Root */,
 				A656CB61266D13C300779260 /* Login */,
 				A656CB5E266D0D9100779260 /* AppView.swift */,
 				A67350C1267005AF006D0CB0 /* Field.swift */,
+				A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +528,7 @@
 				A67350C2267005AF006D0CB0 /* Field.swift in Sources */,
 				A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE4266A590000BF2EE2 /* AppState.swift in Sources */,
+				A6E94C7A26724FF500A1A2C2 /* RoundedCorners.swift in Sources */,
 				A656CB5C266D0D4000779260 /* RootView.swift in Sources */,
 				A616D5B82670FC84005AF719 /* AppError.swift in Sources */,
 				A616D5BB2670FD93005AF719 /* Image+.swift in Sources */,
@@ -556,6 +561,7 @@
 				A67350C3267005AF006D0CB0 /* Field.swift in Sources */,
 				A6503DD1266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6045EE5266A590000BF2EE2 /* AppState.swift in Sources */,
+				A6E94C7B26724FF500A1A2C2 /* RoundedCorners.swift in Sources */,
 				A656CB5D266D0D4000779260 /* RootView.swift in Sources */,
 				A616D5B92670FC84005AF719 /* AppError.swift in Sources */,
 				A616D5BC2670FD93005AF719 /* Image+.swift in Sources */,
