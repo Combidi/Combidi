@@ -13,10 +13,16 @@ extension Image {
 }
 
 #if DEBUG
+
 struct Image_Previews: PreviewProvider {
     static var previews: some View {
         HStack {
             Image(systemName: "trash")
+                .size(20)
+            Image(systemName: "trash")
+                .size(30)
+            Image(systemName: "trash")
+                .size(40)
         }
     }
 }
