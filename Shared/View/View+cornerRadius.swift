@@ -67,14 +67,40 @@ extension View {
 }
 
 #if DEBUG
+struct RoundedCornersExampleView: View {
+    
+    @State private var topLeft: CGFloat = 20
+    @State private var topRight: CGFloat = 10
+    @State private var bottomLeft: CGFloat = 25
+    @State private var bottomRight: CGFloat = 50
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Slider(value: $topLeft, in: 0...50)
+                Slider(value: $topRight, in: 0...50)
+            }
+            Text("Round me!")
+                .foregroundColor(.white)
+                .frame(width: 100, height: 100)
+                .background(Color.green)
+                .cornerRadius(
+                    topLeft: topLeft,
+                    topRight: topRight,
+                    bottomLeft: bottomLeft,
+                    bottomRight: bottomRight
+                )
+            HStack {
+                Slider(value: $bottomLeft, in: 0...50)
+                Slider(value: $bottomRight, in: 0...50)
+            }
+        }
+    }
+}
+
 struct RoundedCorners_Previews: PreviewProvider {
     static var previews: some View {
-        Text("RoundedCorners")
-            .font(.largeTitle)
-            .foregroundColor(.white)
-            .padding(20)
-            .background(Color.red)
-            .cornerRadius(topLeft: 15, topRight: 20, bottomRight: 50)
+        RoundedCornersExampleView()
     }
 }
 #endif

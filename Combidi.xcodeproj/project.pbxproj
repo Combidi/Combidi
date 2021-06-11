@@ -63,8 +63,10 @@
 		A6E94C74267240B200A1A2C2 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C72267240B200A1A2C2 /* ColorManager.swift */; };
 		A6E94C76267242CB00A1A2C2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C75267242CB00A1A2C2 /* View+.swift */; };
 		A6E94C77267242CB00A1A2C2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C75267242CB00A1A2C2 /* View+.swift */; };
-		A6E94C7A26724FF500A1A2C2 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */; };
-		A6E94C7B26724FF500A1A2C2 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */; };
+		A6E94C7A26724FF500A1A2C2 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* View+cornerRadius.swift */; };
+		A6E94C7B26724FF500A1A2C2 /* View+cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* View+cornerRadius.swift */; };
+		A6E94CD2267374EE00A1A2C2 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94CD1267374EE00A1A2C2 /* LoginButton.swift */; };
+		A6E94CD3267374EE00A1A2C2 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94CD1267374EE00A1A2C2 /* LoginButton.swift */; };
 		A6EB5C9A267342B7009848AB /* Font+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB5C99267342B7009848AB /* Font+Previews.swift */; };
 		A6EB5C9B267342B7009848AB /* Font+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB5C99267342B7009848AB /* Font+Previews.swift */; };
 /* End PBXBuildFile section */
@@ -125,7 +127,8 @@
 		A6E94C6F2672406200A1A2C2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A6E94C72267240B200A1A2C2 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		A6E94C75267242CB00A1A2C2 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
-		A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		A6E94C7926724FF500A1A2C2 /* View+cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+cornerRadius.swift"; sourceTree = "<group>"; };
+		A6E94CD1267374EE00A1A2C2 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		A6EB5C99267342B7009848AB /* Font+Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Previews.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,7 +207,7 @@
 				A656CB61266D13C300779260 /* Login */,
 				A656CB5E266D0D9100779260 /* AppView.swift */,
 				A67350C1267005AF006D0CB0 /* Field.swift */,
-				A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */,
+				A6E94C7926724FF500A1A2C2 /* View+cornerRadius.swift */,
 				A6EB5C99267342B7009848AB /* Font+Previews.swift */,
 			);
 			path = View;
@@ -329,6 +332,7 @@
 				A6045EEF266A607600BF2EE2 /* LoginView.swift */,
 				A6045EF2266A629000BF2EE2 /* LoginRenderView.swift */,
 				A6045EF9266A640E00BF2EE2 /* LoginStore.swift */,
+				A6E94CD1267374EE00A1A2C2 /* LoginButton.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -519,6 +523,7 @@
 				A6045EF0266A607600BF2EE2 /* LoginView.swift in Sources */,
 				A656CB5F266D0D9100779260 /* AppView.swift in Sources */,
 				A6045EE1266A58B400BF2EE2 /* Store.swift in Sources */,
+				A6E94CD2267374EE00A1A2C2 /* LoginButton.swift in Sources */,
 				A6503DD2266A57B0009CF173 /* ContentView.swift in Sources */,
 				A616D5BE2670FE3A005AF719 /* AnyPublisher+.swift in Sources */,
 				A6045EF7266A63C000BF2EE2 /* AppAction.swift in Sources */,
@@ -533,7 +538,7 @@
 				A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6EB5C9A267342B7009848AB /* Font+Previews.swift in Sources */,
 				A6045EE4266A590000BF2EE2 /* AppState.swift in Sources */,
-				A6E94C7A26724FF500A1A2C2 /* RoundedCorners.swift in Sources */,
+				A6E94C7A26724FF500A1A2C2 /* View+cornerRadius.swift in Sources */,
 				A656CB5C266D0D4000779260 /* RootView.swift in Sources */,
 				A616D5B82670FC84005AF719 /* AppError.swift in Sources */,
 				A616D5BB2670FD93005AF719 /* Image+.swift in Sources */,
@@ -553,6 +558,7 @@
 				A6045EF1266A607600BF2EE2 /* LoginView.swift in Sources */,
 				A656CB60266D0D9100779260 /* AppView.swift in Sources */,
 				A6045EE2266A58B400BF2EE2 /* Store.swift in Sources */,
+				A6E94CD3267374EE00A1A2C2 /* LoginButton.swift in Sources */,
 				A6503DD3266A57B0009CF173 /* ContentView.swift in Sources */,
 				A616D5BF2670FE3A005AF719 /* AnyPublisher+.swift in Sources */,
 				A6045EF8266A63C000BF2EE2 /* AppAction.swift in Sources */,
@@ -567,7 +573,7 @@
 				A6503DD1266A57B0009CF173 /* CombidiApp.swift in Sources */,
 				A6EB5C9B267342B7009848AB /* Font+Previews.swift in Sources */,
 				A6045EE5266A590000BF2EE2 /* AppState.swift in Sources */,
-				A6E94C7B26724FF500A1A2C2 /* RoundedCorners.swift in Sources */,
+				A6E94C7B26724FF500A1A2C2 /* View+cornerRadius.swift in Sources */,
 				A656CB5D266D0D4000779260 /* RootView.swift in Sources */,
 				A616D5B92670FC84005AF719 /* AppError.swift in Sources */,
 				A616D5BC2670FD93005AF719 /* Image+.swift in Sources */,
@@ -726,7 +732,7 @@
 				DEVELOPMENT_TEAM = D83H87UGV3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -748,7 +754,7 @@
 				DEVELOPMENT_TEAM = D83H87UGV3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

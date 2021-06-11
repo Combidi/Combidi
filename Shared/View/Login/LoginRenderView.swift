@@ -7,12 +7,20 @@ import SwiftUI
 /*
  See URL for design
  https://search.muz.li/ZmNjY2EzN2Zl
+ https://search.muz.li/ZTlmNzYzNWE0
  */
 
 struct LoginRenderView: View {
     
+    enum Field: Hashable {
+        case username
+        case password
+    }
+    
     @Binding var username: String
     @Binding var password: String
+    
+    @FocusState private var focusedField: Field?
     
     let attemptLogin: () -> Void
 
@@ -28,14 +36,32 @@ struct LoginRenderView: View {
                         TextField("Username", text: $username)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
+                            .focused($focusedField, equals: .username)
+                            .textContentType(.username)
+                            .submitLabel(.next)
+
                         SecureField("Password", text: $password)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
-                        loginButton
+                            .focused($focusedField, equals: .password)
+                            .textContentType(.password)
+                            .submitLabel(.send)
+                    
+                    loginButton
                     }
                 )
                 .cornerRadius(topLeft: 50, topRight: 50)
         }
+        .onSubmit {
+            switch focusedField {
+            case .username:
+                focusedField = .password
+            default:
+                focusedField = nil
+                attemptLogin()
+            }
+        }
+
     }
     
     private var background: some View {
