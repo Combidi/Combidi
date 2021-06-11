@@ -17,22 +17,25 @@ struct LoginRenderView: View {
     let attemptLogin: () -> Void
 
     var body: some View {
-        ZStack {
-            Color.yellow
+        ZStack(alignment: .bottomLeading) {
+            ColorManager.background
                 .edgesIgnoringSafeArea(.all)
-            VStack {
-                image
-                Text("Welcome!")
-                TextField("Username", text: $username)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
-                SecureField("Password", text: $password)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
-                loginButton
-            }
+            Color.white
+                .overlay(
+                    VStack {
+                        image
+                        Text("Welcome!")
+                        TextField("Username", text: $username)
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
+                        SecureField("Password", text: $password)
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
+                        loginButton
+                    }
+                )
+                .cornerRadius(topLeft: 50, topRight: 50)
         }
-        .background(background)
     }
     
     private var background: some View {

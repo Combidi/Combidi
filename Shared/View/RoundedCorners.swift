@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct RoundedCorners: Shape {
+fileprivate struct RoundedCorner: Shape {
     
     var topLeft: CGFloat = 0.0
     var topRight: CGFloat = 0.0
@@ -12,34 +12,57 @@ struct RoundedCorners: Shape {
     var bottomRight: CGFloat = 0.0
 
     func path(in rect: CGRect) -> Path {
-        var path = Path()
-
+        
+        let topRight = rect.cappedRadius(for: topRight)
+        let topLeft = rect.cappedRadius(for: topLeft)
+        let bottomLeft = rect.cappedRadius(for: bottomLeft)
+        let bottomRight = rect.cappedRadius(for: bottomRight)
+        
         let width = rect.size.width
         let height = rect.size.height
 
-        let topRight = min(min(self.topRight, height/2), width/2)
-        let topLeft = min(min(self.topLeft, height/2), width/2)
-        let bottomLeft = min(min(self.bottomLeft, height/2), width/2)
-        let bottomRight = min(min(self.bottomRight, height/2), width/2)
+        var path = Path()
 
-        path.move(to: CGPoint(x: width / 2.0, y: 0))
-        path.addLine(to: CGPoint(x: width - topRight, y: 0))
-        path.addArc(center: CGPoint(x: width - topRight, y: topRight), radius: topRight,
-                    startAngle: Angle(degrees: -90), endAngle: Angle(degrees: 0), clockwise: false)
+        path.move(to: .init(x: width / 2.0, y: 0))
+        path.addLine(to: .init(x: width - topRight, y: 0))
+        path.addArc(center: .init(x: width - topRight, y: topRight), radius: topRight,
+                    startAngle: .init(degrees: -90), endAngle: .init(degrees: 0), clockwise: false)
 
-        path.addLine(to: CGPoint(x: width, y: height - bottomRight))
-        path.addArc(center: CGPoint(x: width - bottomRight, y: height - bottomRight), radius: bottomRight,
-                    startAngle: Angle(degrees: 0), endAngle: Angle(degrees: 90), clockwise: false)
+        path.addLine(to: .init(x: width, y: height - bottomRight))
+        path.addArc(center: .init(x: width - bottomRight, y: height - bottomRight), radius: bottomRight,
+                    startAngle: .init(degrees: 0), endAngle: .init(degrees: 90), clockwise: false)
 
-        path.addLine(to: CGPoint(x: bottomLeft, y: height))
-        path.addArc(center: CGPoint(x: bottomLeft, y: height - bottomLeft), radius: bottomLeft,
-                    startAngle: Angle(degrees: 90), endAngle: Angle(degrees: 180), clockwise: false)
+        path.addLine(to: .init(x: bottomLeft, y: height))
+        path.addArc(center: .init(x: bottomLeft, y: height - bottomLeft), radius: bottomLeft,
+                    startAngle: .init(degrees: 90), endAngle: .init(degrees: 180), clockwise: false)
 
-        path.addLine(to: CGPoint(x: 0, y: topLeft))
-        path.addArc(center: CGPoint(x: topLeft, y: topLeft), radius: topLeft,
-                    startAngle: Angle(degrees: 180), endAngle: Angle(degrees: 270), clockwise: false)
+        path.addLine(to: .init(x: 0, y: topLeft))
+        path.addArc(center: .init(x: topLeft, y: topLeft), radius: topLeft,
+                    startAngle: .init(degrees: 180), endAngle: .init(degrees: 270), clockwise: false)
 
         return path
+    }
+}
+
+extension CGRect {
+    func cappedRadius(for prefferedRadius: CGFloat) -> CGFloat {
+        min(min(prefferedRadius, size.height/2), size.width/2)
+    }
+}
+
+extension View {
+    func cornerRadius(
+        topLeft: CGFloat = 0,
+        topRight: CGFloat = 0,
+        bottomLeft: CGFloat = 0,
+        bottomRight: CGFloat = 0
+    ) -> some View {
+        clipShape(RoundedCorner(
+            topLeft: topLeft,
+            topRight: topRight,
+            bottomLeft: bottomLeft,
+            bottomRight: bottomRight
+        ))
     }
 }
 
@@ -50,7 +73,8 @@ struct RoundedCorners_Previews: PreviewProvider {
             .font(.largeTitle)
             .foregroundColor(.white)
             .padding(20)
-            .background(RoundedCorners(topLeft: 15, topRight: 20, bottomLeft: 0, bottomRight: 50).fill(Color.red))
+            .background(Color.red)
+            .cornerRadius(topLeft: 15, topRight: 20, bottomRight: 50)
     }
 }
 #endif
