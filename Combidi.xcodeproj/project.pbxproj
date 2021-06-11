@@ -65,6 +65,8 @@
 		A6E94C77267242CB00A1A2C2 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C75267242CB00A1A2C2 /* View+.swift */; };
 		A6E94C7A26724FF500A1A2C2 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */; };
 		A6E94C7B26724FF500A1A2C2 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */; };
+		A6EB5C9A267342B7009848AB /* Font+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB5C99267342B7009848AB /* Font+Previews.swift */; };
+		A6EB5C9B267342B7009848AB /* Font+Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB5C99267342B7009848AB /* Font+Previews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,7 @@
 		A6E94C72267240B200A1A2C2 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		A6E94C75267242CB00A1A2C2 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		A6EB5C99267342B7009848AB /* Font+Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Previews.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,7 @@
 				A656CB5E266D0D9100779260 /* AppView.swift */,
 				A67350C1267005AF006D0CB0 /* Field.swift */,
 				A6E94C7926724FF500A1A2C2 /* RoundedCorners.swift */,
+				A6EB5C99267342B7009848AB /* Font+Previews.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,6 +531,7 @@
 				A6045EFA266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A67350C2267005AF006D0CB0 /* Field.swift in Sources */,
 				A6503DD0266A57B0009CF173 /* CombidiApp.swift in Sources */,
+				A6EB5C9A267342B7009848AB /* Font+Previews.swift in Sources */,
 				A6045EE4266A590000BF2EE2 /* AppState.swift in Sources */,
 				A6E94C7A26724FF500A1A2C2 /* RoundedCorners.swift in Sources */,
 				A656CB5C266D0D4000779260 /* RootView.swift in Sources */,
@@ -560,6 +565,7 @@
 				A6045EFB266A640E00BF2EE2 /* LoginStore.swift in Sources */,
 				A67350C3267005AF006D0CB0 /* Field.swift in Sources */,
 				A6503DD1266A57B0009CF173 /* CombidiApp.swift in Sources */,
+				A6EB5C9B267342B7009848AB /* Font+Previews.swift in Sources */,
 				A6045EE5266A590000BF2EE2 /* AppState.swift in Sources */,
 				A6E94C7B26724FF500A1A2C2 /* RoundedCorners.swift in Sources */,
 				A656CB5D266D0D4000779260 /* RootView.swift in Sources */,
